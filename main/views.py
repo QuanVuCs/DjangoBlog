@@ -88,4 +88,5 @@ def single_slug(request, single_slug):
                       context={"tutorial": this_tutorial,
                                "sidebar": tutorials_from_series,
                                "this_tut_idx": this_tutorial_idx})
+    return HttpResponse(f"'{single_slug}' does not correspond to anything we know of!")
     
